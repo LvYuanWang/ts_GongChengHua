@@ -2,21 +2,18 @@
   "compilerOptions": {
     "target": "es2016",
     // nodeNext: 既支持nodejs(Commonjs)的模块解析方式，也支持es6(ESModule)的模块解析方式
-    "module": "nodeNext",
-    "moduleResolution": "nodeNext",
-    // "noEmit": true,
-    // "allowImportingTsExtensions": true,
-    "outDir": "./ts_dist",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "outDir": "./dist",
+    "declaration": true, // 生成声明文件
+    "declarationDir": "./types",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
-    "baseUrl": "./", // 用于解析非相对模块名的基目录
-    "paths": { // 用于映射模块名
-      "@/*": [
-        "src/*"
-      ]
-    },
-    "resolveJsonModule": true
-  }
+  },
+  "include": [ // 只编译src目录下的文件
+    "src/**/*",
+    "src/**/*.d.ts"
+  ],
 }

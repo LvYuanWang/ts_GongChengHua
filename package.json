@@ -1,9 +1,9 @@
 {
   "name": "ts_gongchenghua",
   "version": "1.0.0",
-  "description": "",
-  "type": "module",
+  "description": "类型声明与模块化 And 类型声明相关处理",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^1.7.7"
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.7"
   }
 }

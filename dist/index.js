@@ -1,7 +1,14 @@
-// ESModule 的模块化
-import { show } from "./myModule.js";
-import "./a/index.js"
-show();
-
-// 只有在node环境下有效, 在浏览器下必须要是完整的路径 ./node_modules/n/index.js
-import "n";
+// console.log(num);
+// console.log(str);
+// console.log(nickname);
+// const call = nickname;
+// const p = power(2, 3);
+// const MyAdd: FnAdd = (a, b) => a + b;
+// const person: Person = {
+//   id: 1,
+//   name: 'Joker',
+//   age: 18
+// }
+import _ from 'lodash';
+const r = _.add(1, 3);
+console.log(r);

@@ -1,1 +1,0 @@
-console.log("esModule --> dist/a/index.js");
