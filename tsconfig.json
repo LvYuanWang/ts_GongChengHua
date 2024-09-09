@@ -12,7 +12,8 @@
     "strict": true,
     "skipLibCheck": true,
   },
-  "include": [ // 只编译src目录下的文件
+  // 只编译src目录下的文件
+  "include": [
     "src/**/*",
     "src/**/*.d.ts"
   ],
