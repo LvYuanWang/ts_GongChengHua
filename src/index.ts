@@ -1,9 +1,2 @@
-const user: User = {
-  id: 1,
-  name: 'tom',
-  lever: "failsafe"
-}
-
-const showUser: showStudent = (stu) => {
-  console.log(stu);
-}
+import randomNumber from "./randomNumber";
+console.log(randomNumber(1, 100));

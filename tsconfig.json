@@ -4,17 +4,15 @@
     // nodeNext: 既支持nodejs(Commonjs)的模块解析方式，也支持es6(ESModule)的模块解析方式
     "module": "ESNext",
     "moduleResolution": "Node",
-    "outDir": "./dist",
-    "declaration": true, // 生成声明文件
-    "declarationDir": "./types",
+    "noEmit": true, // 不生成文件
+    "allowImportingTsExtensions": true, // 允许导入.ts文件
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
   },
-  // 只编译src目录下的文件
+  // include: 只编译src目录下的文件
   "include": [
-    "src/**/*",
-    "src/**/*.d.ts"
-  ],
+    "src"
+  ]
 }
